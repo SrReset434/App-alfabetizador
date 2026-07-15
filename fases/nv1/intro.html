@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(56, 55, 55);
+        color: white;
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        h3{
+            text-align: center;
+        }
+        
+        #caixa{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #ok{
+            border: 2px white solid;
+            padding: 18px;
+            width: 120px;
+            display: flex;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #ok:hover{
+            background-color: rgb(4, 233, 4);
+            cursor: pointer;
+            color: black;
+            scale: 0.8;
+            transition: all 1s ease;
+        }
+
+        #ok:not(:hover), a:not(:hover){
+            transition: all 0.8s ease-in-out;
+        }
+
+        p{
+            text-align: center;
+            width: 285px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        a:active{
+            color: white;
+        }
+
+        a:visited{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+
+        <div id="atn">
+            <h3>Aliteração:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero praesentium dignissimos, atque
+            quasi quisquam vitae corporis quos veritatis vero officiis enim maxime earum a nesciunt sit illum quo,
+            deleniti alias.</p>
+        </div>
+
+        <a href="car.html">
+            <div id="ok">
+                <p>Ok!</p>
+            </div>
+        </a>
+
+    </div>
+</body>
+</html>
