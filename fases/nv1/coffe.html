@@ -14,8 +14,8 @@
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão T">
-                            <p class="letra">T</p>
+                        <div class="botão X">
+                            <p class="letra">X</p>
                         </div>
                         <div class="botão P">
                             <p class="letra">P</p>
@@ -45,17 +45,17 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var T = window.document.querySelector('.T')
-        var ST = new Audio('/ad/T.mp3')
+        var X = window.document.querySelector('.X')
+        var SX = new Audio('../../ad/X.mp3')
 
         var P = window.document.querySelector('.P')
-        var SP = new Audio('/ad/P.mp3')
+        var SP = new Audio('../../ad/P.mp3')
 
         var C = window.document.querySelector('.C')
-        var SC = new Audio('/ad/C.mp3')
+        var SC = new Audio('../../ad/C.mp3')
 
         var L = window.document.querySelector('.L')
-        var SL = new Audio('/ad/L.mp3')
+        var SL = new Audio('../../ad/L.mp3')
 
         const res = "C"
 
@@ -78,11 +78,6 @@
                 })
             })
 
-            C.addEventListener('mouseenter', function(){
-                SC.currentTime = 0
-                SC.play()
-            })
-
                 avancar.addEventListener('click', () =>{
                     avancar.style.display = 'none'
                     go.style.display = 'block'
@@ -103,6 +98,26 @@
 
                 td.addEventListener('click', function(){
                     window.location.href = 'gv.html'
+                })
+
+                X.addEventListener('mouseenter', function(){
+                    SX.currentTime = 0
+                    SX.play()
+                })
+
+                P.addEventListener('mouseenter', function(){
+                    SP.currentTime = 0
+                    SP.play()
+                })
+
+                C.addEventListener('mouseenter', function(){
+                    SC.currentTime = 0
+                    SC.play()
+                })
+
+                L.addEventListener('mouseenter', function(){
+                    SL.currentTime = 0
+                    SL.play()
                 })
 
             /*botao.forEach(botão1 => {

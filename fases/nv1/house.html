@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
     <link rel="stylesheet" href="desg-fs.css">
-    <!--Fase 2/nv1/ali-->
+    <!--Fase 5/nv1/ali-->
 </head>
 <body>
     <header>
-        <h2>Qual a primeira letra dese objeto?</h2>
+        <h2>Qual a primeira letra desse objeto?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
@@ -20,11 +20,11 @@
                         <div class="botão B">
                             <p class="letra">B</p>
                         </div>
-                        <div class="botão M">
-                            <p class="letra">M</p>
+                        <div class="botão C">
+                            <p class="letra">C</p>
                         </div>
-                        <div class="botão G">
-                            <p class="letra">G</p>
+                        <div class="botão N">
+                            <p class="letra">N</p>
                         </div>
                     </div>
             
@@ -35,7 +35,7 @@
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/gato.png" alt="Gato" id="imagem">
+                <img src="../../imagens/casa.png" alt="casa" id="imagem">
     </div>
     <script>
         const botao = window.document.querySelectorAll('.botão')
@@ -45,19 +45,19 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
+        var P = window.document.querySelector('.P')
+        var SP = new Audio('../../ad/P.mp3')
+
         var B = window.document.querySelector('.B')
         var SB = new Audio('../../ad/B.mp3')
 
-        var P = window.document.querySelector('.P')
-        var SP = new Audio('/ad/P.mp3')
+        var C = window.document.querySelector('.C')
+        var SC = new Audio('../../ad/C.mp3')
 
-        var M = window.document.querySelector('.M')
-        var SM = new Audio('/ad/M.mp3')
+        var N = window.document.querySelector('.N')
+        var SN = new Audio('../../ad/N.mp3')
 
-        var G = window.document.querySelector('.G')
-        var SG = new Audio('/ad/G.mp3')
-
-        const res = "G"
+        const res = "L"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -93,31 +93,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'ball.html'
+                    window.location.href = '#'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv.html'
+                    window.location.href = 'gv2.html'
                 })
 
                 P.addEventListener('mouseenter', function(){
                     SP.currentTime = 0
                     SP.play()
                 })
-
+                
                 B.addEventListener('mouseenter', function(){
                     SB.currentTime = 0
                     SB.play()
                 })
 
-                M.addEventListener('mouseenter', function(){
-                    SM.currentTime = 0
-                    SM.play()
+                C.addEventListener('mouseenter', function(){
+                    SC.currentTime = 0
+                    SC.play()
                 })
 
-                G.addEventListener('mouseenter', function(){
-                    SG.currentTime = 0
-                    SG.play()
+                N.addEventListener('mouseenter', function(){
+                    SN.currentTime = 0
+                    SN.play()
                 })
 
             /*botao.forEach(botão1 => {
@@ -135,13 +135,3 @@
     </script>
 </body>
 </html>
-
-<!-- Anotar no diário de bordo:
-02/06/2026 17:56
-A noite:
-Hoje, eu, Adlley, dei continuidade na criação de fases, 
-usando as fases da versão antiga do jogo, porém com o estilo 
-novo.  Também acrescentarei o áudio a elas no futuro. O jogo 
-provavelmente não terá novas fases, serão as mesmas fases, 
-porém melhoradas. 
--->
