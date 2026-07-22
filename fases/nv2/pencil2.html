@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs.css">
-    <!--Fase 7/nv1/ali-->
+    <link rel="stylesheet" href="desg-fs2.css">
+    <!--Fase 6/nv1/ali-->
 </head>
 <body>
     <header>
@@ -14,17 +14,17 @@
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão P">
-                            <p class="letra">P</p>
+                        <div class="botão LA">
+                            <p class="letra">LÁ</p>
                         </div>
-                        <div class="botão B">
-                            <p class="letra">B</p>
+                        <div class="botão LE">
+                            <p class="letra">LE</p>
                         </div>
-                        <div class="botão C">
-                            <p class="letra">C</p>
+                        <div class="botão LI">
+                            <p class="letra">LI</p>
                         </div>
-                        <div class="botão N">
-                            <p class="letra">N</p>
+                        <div class="botão LU">
+                            <p class="letra">LU</p>
                         </div>
                     </div>
             
@@ -35,7 +35,7 @@
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/casa.png" alt="casa" id="imagem">
+                <img src="../../imagens/lápis.png" alt="lápis" id="imagem">
     </div>
     <script>
         const botao = window.document.querySelectorAll('.botão')
@@ -45,19 +45,19 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var P = window.document.querySelector('.P')
-        var SP = new Audio('../../ad/P.mp3')
+        var LA = window.document.querySelector('.LA')
+        var SLA = new Audio('../../ad/LA.mp3')
 
-        var B = window.document.querySelector('.B')
-        var SB = new Audio('../../ad/B.mp3')
+        var LE = window.document.querySelector('.LE')
+        var SLE = new Audio('../../ad/LE.mp3')
 
-        var C = window.document.querySelector('.C')
-        var SC = new Audio('../../ad/C.mp3')
+        var LI = window.document.querySelector('.LI')
+        var SLI = new Audio('../../ad/LI.mp3')
 
-        var N = window.document.querySelector('.N')
-        var SN = new Audio('../../ad/N.mp3')
+        var LU = window.document.querySelector('.LU')
+        var SLU = new Audio('../../ad/LU.mp3')
 
-        const res = "C"
+        const res = "LÁ"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -93,31 +93,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = '../nv2/intro2.html'
+                    window.location.href = 'house2.html'
                 })
 
                 td.addEventListener('click', function(){
                     window.location.href = 'gv2.html'
                 })
 
-                P.addEventListener('mouseenter', function(){
-                    SP.currentTime = 0
-                    SP.play()
+                CE.addEventListener('mouseenter', function(){
+                    SCE.currentTime = 0
+                    SCE.play()
                 })
                 
-                B.addEventListener('mouseenter', function(){
-                    SB.currentTime = 0
-                    SB.play()
+                LE.addEventListener('mouseenter', function(){
+                    SLE.currentTime = 0
+                    SLE.play()
                 })
 
-                C.addEventListener('mouseenter', function(){
-                    SC.currentTime = 0
-                    SC.play()
+                LI.addEventListener('mouseenter', function(){
+                    SLI.currentTime = 0
+                    SLI.play()
                 })
 
-                N.addEventListener('mouseenter', function(){
-                    SN.currentTime = 0
-                    SN.play()
+                LU.addEventListener('mouseenter', function(){
+                    SLU.currentTime = 0
+                    SLU.play()
                 })
 
             /*botao.forEach(botão1 => {
