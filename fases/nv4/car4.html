@@ -4,59 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs3.css">
-    <!--Fase 3/nv3/ali-->
+    <link rel="stylesheet" href="desg-fs4.css">
+    <!--Fase 1/nv4/rima-->
 </head>
 <body>
     <header>
-        <h2>Qual a última letra desse objeto?</h2>
+        <h2>Qual a última sílaba desse objeto?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão A">
-                            <p class="letra">A</p>
+                        <div class="botão RA">
+                            <p class="letra">RA</p>
                         </div>
-                        <div class="botão O">
-                            <p class="letra">O</p>
+                        <div class="botão RI">
+                            <p class="letra">RI</p>
                         </div>
-                        <div class="botão U">
-                            <p class="letra">U</p>
+                        <div class="botão RO">
+                            <p class="letra">RO</p>
                         </div>
-                        <div class="botão I">
-                            <p class="letra">I</p>
+                        <div class="botão RE">
+                            <p class="letra">RE</p>
                         </div>
                     </div>
             
                     <div id="correção">
                         <div id = "avançar"><p>Verificar</p></div>
                         <div id = "gv"><p>Verificar</p></div>
-                    <div id="go"><p id="texto1">Parabéns!</p></div>
+                        <div id="go"><p id="texto1">Parabéns!</p></div>
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/bola.png" alt="Bola" id="imagem">
+                <img src="../../imagens/carro.png" alt="Carro" id="imagem">
     </div>
     <script>
-        const botao = window.document.querySelectorAll('.botão')
+       const botao = window.document.querySelectorAll('.botão')
         const avancar = window.document.getElementById('avançar')
         const gv = window.document.getElementById('gv')
         const img = window.document.getElementById('imagem')         
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var A = window.document.querySelector('.A')
-        var SA = new Audio('../../ad/A.mp3')
+        var RA = window.document.querySelector('.RA')
+        var SRA = new Audio('../../ad/RA.mp3')
 
-        var O = window.document.querySelector('.O')
-        var SO = new Audio('../../ad/O.mp3')
+        var RI = window.document.querySelector('.RI')
+        var SRI = new Audio('../../ad/RI.mp3')
 
-        var U = window.document.querySelector('.U')
-        var SU = new Audio('../../ad/U.mp3')
+        var RO = window.document.querySelector('.RO')
+        var SRO = new Audio('../../ad/RO.mp3')
 
-        var I = window.document.querySelector('.I')
-        var SI = new Audio('../../ad/I.mp3')
-        const res = "A"
+        var RE = window.document.querySelector('.RE')
+        var SRE = new Audio('../../ad/RE.mp3')
+
+        const res = "RO"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -79,12 +80,34 @@
                 })
             })
 
+            RA.addEventListener('mouseenter', function(){
+                SRA.currentTime = 0
+                SRA.play()
+            })
+            
+
+            RI.addEventListener('mouseenter', function(){
+                SRI.currentTime = 0
+                SRI.play()
+            })
+
+            RO.addEventListener('mouseenter', function(){
+                SRO.currentTime = 0
+                SRO.play()
+            })
+
+            RE.addEventListener('mouseenter', function(){
+                SRE.currentTime = 0
+                SRE.play()
+            })
+
                 avancar.addEventListener('click', () =>{
                     avancar.style.display = 'none'
                     go.style.display = 'block'
                     go.style.backgroundColor = 'rgb(4, 233, 4)'
                     go.style.color = 'black'
                 })
+                
 
                 gv.addEventListener('click', () =>{
                     gv.style.display = 'none'
@@ -94,32 +117,13 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'coffe3.html'
+                    window.location.href = 'cat4.html'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv5.html'
+                    window.location.href = 'gv7.html'
                 })
 
-                A.addEventListener('mouseenter', function(){
-                    SA.currentTime = 0
-                    SA.play()
-                })
-
-                O.addEventListener('mouseenter', function(){
-                    SO.currentTime = 0
-                    SO.play()
-                })
-
-                U.addEventListener('mouseenter', function(){
-                    SU.currentTime = 0
-                    SU.play()
-                })
-
-                I.addEventListener('mouseenter', function(){
-                    SI.currentTime = 0
-                    SI.play()
-                })
 
             /*botao.forEach(botão1 => {
                 botão1.addEventListener("click", () => {
@@ -135,4 +139,14 @@
             })*/
     </script>
 </body>
+<!--
+09/06/2026 22:09
+-Pela noite
+Hoje, eu, Adlley, corrigi um erro do jogo e deixei a versão de celular um pouco melhor,
+não pronta, ainda irei termina-la. 
+O erro corrigido foi o dos botões de avançar, tentar de novo e de verificar, que apareciam ao
+mesmo tempo quando eu clicava em alguma outra opção com o botão de tentar de novo, ou,
+de avaçar já visíveis.
+Ass: Adlley Samuel Oliveira
+-->
 </html>

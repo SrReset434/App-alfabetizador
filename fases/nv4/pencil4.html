@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs3.css">
-    <!--Fase 3/nv3/ali-->
+    <link rel="stylesheet" href="desg-fs4.css">
+    <!--Fase 6/nv4/rima-->
+    <style>
+        .botão{
+            font-size: 24px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h2>Qual a última letra desse objeto?</h2>
+        <h2>Qual a última sílaba desse objeto?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão A">
-                            <p class="letra">A</p>
+                        <div class="botão POS">
+                            <p class="letra">POS</p>
                         </div>
-                        <div class="botão O">
-                            <p class="letra">O</p>
+                        <div class="botão PES">
+                            <p class="letra">PES</p>
                         </div>
-                        <div class="botão U">
-                            <p class="letra">U</p>
+                        <div class="botão PIS">
+                            <p class="letra">PIS</p>
                         </div>
-                        <div class="botão I">
-                            <p class="letra">I</p>
+                        <div class="botão PAS">
+                            <p class="letra">PAS</p>
                         </div>
                     </div>
             
                     <div id="correção">
                         <div id = "avançar"><p>Verificar</p></div>
                         <div id = "gv"><p>Verificar</p></div>
-                    <div id="go"><p id="texto1">Parabéns!</p></div>
+                        <div id="go"><p id="texto1">Parabéns!</p></div>
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/bola.png" alt="Bola" id="imagem">
+                <img src="../../imagens/lápis.png" alt="lápis" id="imagem">
     </div>
     <script>
         const botao = window.document.querySelectorAll('.botão')
@@ -45,18 +52,19 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var A = window.document.querySelector('.A')
-        var SA = new Audio('../../ad/A.mp3')
+        var POS = window.document.querySelector('.POS')
+        var SPOS = new Audio('../../ad/POS.mp3')
 
-        var O = window.document.querySelector('.O')
-        var SO = new Audio('../../ad/O.mp3')
+        var PES = window.document.querySelector('.PES')
+        var SPES = new Audio('../../ad/PES.mp3')
 
-        var U = window.document.querySelector('.U')
-        var SU = new Audio('../../ad/U.mp3')
+        var PIS = window.document.querySelector('.PIS')
+        var SPIS = new Audio('../../ad/PIS.mp3')
 
-        var I = window.document.querySelector('.I')
-        var SI = new Audio('../../ad/I.mp3')
-        const res = "A"
+        var PAS = window.document.querySelector('.PAS')
+        var SPAS = new Audio('../../ad/PAS.mp3')
+
+        const res = "PIS"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -66,10 +74,8 @@
                     
                     if(lt === res){
                         avancar.style.display = 'block'
-                        //img.style.scale = '0.9'
                     } else{
                         gv.style.display = 'block'
-                        //img.style.scale = '0.9'
                     }
                     
                     if(go.style.display == 'block' || td.style.display == 'block'){
@@ -94,31 +100,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'coffe3.html'
+                    window.location.href = 'house4.html'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv5.html'
+                    window.location.href = 'gv8.html'
                 })
 
-                A.addEventListener('mouseenter', function(){
-                    SA.currentTime = 0
-                    SA.play()
+                POS.addEventListener('mouseenter', function(){
+                    SPOS.currentTime = 0
+                    SPOS.play()
+                })
+                
+                PES.addEventListener('mouseenter', function(){
+                    SPES.currentTime = 0
+                    SPES.play()
                 })
 
-                O.addEventListener('mouseenter', function(){
-                    SO.currentTime = 0
-                    SO.play()
+                PIS.addEventListener('mouseenter', function(){
+                    SPIS.currentTime = 0
+                    SPIS.play()
                 })
 
-                U.addEventListener('mouseenter', function(){
-                    SU.currentTime = 0
-                    SU.play()
-                })
-
-                I.addEventListener('mouseenter', function(){
-                    SI.currentTime = 0
-                    SI.play()
+                PAS.addEventListener('mouseenter', function(){
+                    SPAS.currentTime = 0
+                    SPAS.play()
                 })
 
             /*botao.forEach(botão1 => {

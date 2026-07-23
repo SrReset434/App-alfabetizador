@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs3.css">
-    <!--Fase 3/nv3/ali-->
+    <link rel="stylesheet" href="desg-fs4.css">
+    <!--Fase 5/nv3/ali-->
 </head>
 <body>
     <header>
-        <h2>Qual a última letra desse objeto?</h2>
+        <h2>Qual a última sílaba desse objeto?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão A">
-                            <p class="letra">A</p>
+                        <div class="botão CO">
+                            <p class="letra">CO</p>
                         </div>
-                        <div class="botão O">
-                            <p class="letra">O</p>
+                        <div class="botão CI">
+                            <p class="letra">CI</p>
                         </div>
-                        <div class="botão U">
-                            <p class="letra">U</p>
+                        <div class="botão CE">
+                            <p class="letra">CE</p>
                         </div>
-                        <div class="botão I">
-                            <p class="letra">I</p>
+                        <div class="botão CA">
+                            <p class="letra">CA</p>
                         </div>
                     </div>
             
                     <div id="correção">
                         <div id = "avançar"><p>Verificar</p></div>
                         <div id = "gv"><p>Verificar</p></div>
-                    <div id="go"><p id="texto1">Parabéns!</p></div>
+                        <div id="go"><p id="texto1">Parabéns!</p></div>
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/bola.png" alt="Bola" id="imagem">
+                <img src="../../imagens/barco.png" alt="Café" id="imagem">
     </div>
     <script>
         const botao = window.document.querySelectorAll('.botão')
@@ -45,18 +45,19 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var A = window.document.querySelector('.A')
-        var SA = new Audio('../../ad/A.mp3')
+        var CO = window.document.querySelector('.CO')
+        var SCO = new Audio('../../ad/CO.mp3')
 
-        var O = window.document.querySelector('.O')
-        var SO = new Audio('../../ad/O.mp3')
+        var CI = window.document.querySelector('.CI')
+        var SCI = new Audio('../../ad/CI.mp3')
 
-        var U = window.document.querySelector('.U')
-        var SU = new Audio('../../ad/U.mp3')
+        var CE = window.document.querySelector('.CE')
+        var SCE = new Audio('../../ad/CE.mp3')
 
-        var I = window.document.querySelector('.I')
-        var SI = new Audio('../../ad/I.mp3')
-        const res = "A"
+        var CA = window.document.querySelector('.CA')
+        var SCA = new Audio('../../ad/CA.mp3')
+
+        const res = "CO"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -66,10 +67,8 @@
                     
                     if(lt === res){
                         avancar.style.display = 'block'
-                        //img.style.scale = '0.9'
                     } else{
                         gv.style.display = 'block'
-                        //img.style.scale = '0.9'
                     }
                     
                     if(go.style.display == 'block' || td.style.display == 'block'){
@@ -94,31 +93,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'coffe3.html'
+                    window.location.href = 'pencil4.html'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv5.html'
+                    window.location.href = 'gv8.html'
                 })
 
-                A.addEventListener('mouseenter', function(){
-                    SA.currentTime = 0
-                    SA.play()
+                CO.addEventListener('mouseenter', function(){
+                    SCO.currentTime = 0
+                    SCO.play()
                 })
 
-                O.addEventListener('mouseenter', function(){
-                    SO.currentTime = 0
-                    SO.play()
+                CI.addEventListener('mouseenter', function(){
+                    SCI.currentTime = 0
+                    SCI.play()
                 })
 
-                U.addEventListener('mouseenter', function(){
-                    SU.currentTime = 0
-                    SU.play()
+                CE.addEventListener('mouseenter', function(){
+                    SCE.currentTime = 0
+                    SCE.play()
                 })
 
-                I.addEventListener('mouseenter', function(){
-                    SI.currentTime = 0
-                    SI.play()
+                CA.addEventListener('mouseenter', function(){
+                    SCA.currentTime = 0
+                    SCA.play()
                 })
 
             /*botao.forEach(botão1 => {

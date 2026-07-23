@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs3.css">
-    <!--Fase 3/nv3/ali-->
+    <link rel="stylesheet" href="desg-fs4.css">
+    <!--Fase 2/nv3/ali-->
 </head>
 <body>
     <header>
-        <h2>Qual a última letra desse objeto?</h2>
+        <h2>Qual a última sílaba desse animal?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão A">
-                            <p class="letra">A</p>
+                        <div class="botão TA">
+                            <p class="letra">TA</p>
                         </div>
-                        <div class="botão O">
-                            <p class="letra">O</p>
+                        <div class="botão TI">
+                            <p class="letra">TI</p>
                         </div>
-                        <div class="botão U">
-                            <p class="letra">U</p>
+                        <div class="botão TO">
+                            <p class="letra">TO</p>
                         </div>
-                        <div class="botão I">
-                            <p class="letra">I</p>
+                        <div class="botão TE">
+                            <p class="letra">TE</p>
                         </div>
                     </div>
             
                     <div id="correção">
                         <div id = "avançar"><p>Verificar</p></div>
                         <div id = "gv"><p>Verificar</p></div>
-                    <div id="go"><p id="texto1">Parabéns!</p></div>
+                        <div id="go"><p id="texto1">Parabéns!</p></div>
                         <div id="td"><p id="texto2">Tente de novo!</p></div>
                     </div>
         </div>
-                <img src="../../imagens/bola.png" alt="Bola" id="imagem">
+                <img src="../../imagens/gato.png" alt="Gato" id="imagem">
     </div>
     <script>
         const botao = window.document.querySelectorAll('.botão')
@@ -45,18 +45,19 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var A = window.document.querySelector('.A')
-        var SA = new Audio('../../ad/A.mp3')
+        var TA = window.document.querySelector('.TA')
+        var STA = new Audio('../../ad/TA.mp3')
 
-        var O = window.document.querySelector('.O')
-        var SO = new Audio('../../ad/O.mp3')
+        var TI = window.document.querySelector('.TI')
+        var STI = new Audio('../../ad/TI.mp3')
 
-        var U = window.document.querySelector('.U')
-        var SU = new Audio('../../ad/U.mp3')
+        var TO = window.document.querySelector('.TO')
+        var STO = new Audio('../../ad/TO.mp3')
 
-        var I = window.document.querySelector('.I')
-        var SI = new Audio('../../ad/I.mp3')
-        const res = "A"
+        var TE = window.document.querySelector('.TE')
+        var STE = new Audio('../../ad/TE.mp3')
+
+        const res = "TO"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -66,10 +67,8 @@
                     
                     if(lt === res){
                         avancar.style.display = 'block'
-                        //img.style.scale = '0.9'
                     } else{
                         gv.style.display = 'block'
-                        //img.style.scale = '0.9'
                     }
                     
                     if(go.style.display == 'block' || td.style.display == 'block'){
@@ -94,31 +93,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'coffe3.html'
+                    window.location.href = 'ball4.html'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv5.html'
+                    window.location.href = 'gv7.html'
                 })
 
-                A.addEventListener('mouseenter', function(){
-                    SA.currentTime = 0
-                    SA.play()
+                TA.addEventListener('mouseenter', function(){
+                    STA.currentTime = 0
+                    STA.play()
                 })
 
-                O.addEventListener('mouseenter', function(){
-                    SO.currentTime = 0
-                    SO.play()
+                TI.addEventListener('mouseenter', function(){
+                    STI.currentTime = 0
+                    STI.play()
                 })
 
-                U.addEventListener('mouseenter', function(){
-                    SU.currentTime = 0
-                    SU.play()
+                TO.addEventListener('mouseenter', function(){
+                    STO.currentTime = 0
+                    STO.play()
                 })
 
-                I.addEventListener('mouseenter', function(){
-                    SI.currentTime = 0
-                    SI.play()
+                TE.addEventListener('mouseenter', function(){
+                    STE.currentTime = 0
+                    STE.play()
                 })
 
             /*botao.forEach(botão1 => {
@@ -136,3 +135,13 @@
     </script>
 </body>
 </html>
+
+<!-- Anotar no diário de bordo:
+02/06/2026 17:56
+A noite:
+Hoje, eu, Adlley, dei continuidade na criação de fases, 
+usando as fases da versão antiga do jogo, porém com o estilo 
+novo.  Também acrescentarei o áudio a elas no futuro. O jogo 
+provavelmente não terá novas fases, serão as mesmas fases, 
+porém melhoradas. 
+-->

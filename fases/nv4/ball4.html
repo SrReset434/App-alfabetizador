@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A definir</title>
-    <link rel="stylesheet" href="desg-fs3.css">
-    <!--Fase 3/nv3/ali-->
+    <link rel="stylesheet" href="desg-fs4.css">
+    <!--Fase 3/nv4/rima-->
 </head>
 <body>
     <header>
-        <h2>Qual a última letra desse objeto?</h2>
+        <h2>Qual a última sílaba desse objeto?</h2>
     </header>
         <div id="caixa0">
             <div id="caixa">
                     <div id="botões">
-                        <div class="botão A">
-                            <p class="letra">A</p>
+                        <div class="botão LA">
+                            <p class="letra">LA</p>
                         </div>
-                        <div class="botão O">
-                            <p class="letra">O</p>
+                        <div class="botão LU">
+                            <p class="letra">LU</p>
                         </div>
-                        <div class="botão U">
-                            <p class="letra">U</p>
+                        <div class="botão LO">
+                            <p class="letra">LO</p>
                         </div>
-                        <div class="botão I">
-                            <p class="letra">I</p>
+                        <div class="botão LI">
+                            <p class="letra">LI</p>
                         </div>
                     </div>
             
@@ -45,18 +45,18 @@
         var go = window.document.getElementById('go')
         var td = window.document.getElementById('td')
 
-        var A = window.document.querySelector('.A')
-        var SA = new Audio('../../ad/A.mp3')
+        var LA = window.document.querySelector('.LA')
+        var SLA = new Audio('../../ad/LA.mp3')
 
-        var O = window.document.querySelector('.O')
-        var SO = new Audio('../../ad/O.mp3')
+        var LU = window.document.querySelector('.LU')
+        var SLU = new Audio('../../ad/LU.mp3')
 
-        var U = window.document.querySelector('.U')
-        var SU = new Audio('../../ad/U.mp3')
+        var LO = window.document.querySelector('.LO')
+        var SLO = new Audio('../../ad/LO.mp3')
 
-        var I = window.document.querySelector('.I')
-        var SI = new Audio('../../ad/I.mp3')
-        const res = "A"
+        var LI = window.document.querySelector('.LI')
+        var SLI = new Audio('../../ad/LI.mp3')
+        const res = "LA"
 
             botao.forEach(teste => { // possibildidade: botao.forEach(Function(teste){...})
                 teste.addEventListener("click", () => {  // O "=>" é equivale a "function"
@@ -94,31 +94,31 @@
                 })
 
                 go.addEventListener('click', function(){
-                    window.location.href = 'coffe3.html'
+                    window.location.href = 'coffe4.html'
                 })
 
                 td.addEventListener('click', function(){
-                    window.location.href = 'gv5.html'
+                    window.location.href = 'gv7.html'
                 })
 
-                A.addEventListener('mouseenter', function(){
-                    SA.currentTime = 0
-                    SA.play()
+                LA.addEventListener('mouseenter', function(){
+                    SLA.currentTime = 0
+                    SLA.play()
                 })
 
-                O.addEventListener('mouseenter', function(){
-                    SO.currentTime = 0
-                    SO.play()
+                LU.addEventListener('mouseenter', function(){
+                    SLU.currentTime = 0
+                    SLU.play()
                 })
 
-                U.addEventListener('mouseenter', function(){
-                    SU.currentTime = 0
-                    SU.play()
+                LO.addEventListener('mouseenter', function(){
+                    SLO.currentTime = 0
+                    SLO.play()
                 })
 
-                I.addEventListener('mouseenter', function(){
-                    SI.currentTime = 0
-                    SI.play()
+                LI.addEventListener('mouseenter', function(){
+                    SLI.currentTime = 0
+                    SLI.play()
                 })
 
             /*botao.forEach(botão1 => {
